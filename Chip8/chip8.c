@@ -374,13 +374,13 @@ void executar(CHIP8 * CH8){
 
 }
 
-//Bloco que faz o delay do jogo e o delay da musica.
-void timers(CHIP8 * CH8){
+    //Bloco que faz o delay do jogo e o delay da musica.
+    void timers(CHIP8 * CH8){
     if(CH8->delay_timer > 0)
         CH8->delay_timer--;
     if(CH8->sound_timer > 0)
         CH8->sound_timer--;
     if(CH8->sound_timer != 0)
         printf("%c", 7);
-}  
+    }  
 }
